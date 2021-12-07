@@ -1,0 +1,18 @@
+@use "../custom-bootstrap" as *;
+@use "../components/mixins" as *;
+
+.menu {
+  @include gradient;
+
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: rgba($white, 0.5);
+      }
+    }
+  }
+}

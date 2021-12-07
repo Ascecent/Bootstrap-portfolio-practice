@@ -1,0 +1,50 @@
+@use "../custom-bootstrap" as *;
+@use "../components/mixins" as *;
+
+.get-started {
+  padding: 4rem 0 5.5rem;
+  background-color: $gray-100;
+}
+
+.cta-info {
+  @include gradient;
+  padding: 4rem 5rem;
+
+  &__list {
+    position: relative;
+    list-style: none;
+    margin-bottom: 0.5rem;
+
+    li::before {
+      content: "\2714";
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.cta-form {
+  padding: 4rem;
+
+  input,
+  textarea {
+    padding: 1rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .cta {
+    &-info,
+    &-form {
+      padding: 3rem;
+
+      button {
+        display: block;
+      }
+    }
+  }
+}

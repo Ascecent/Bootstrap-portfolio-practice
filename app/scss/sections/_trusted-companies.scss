@@ -1,0 +1,37 @@
+@use "../custom-bootstrap" as *;
+@use "../components/mixins" as *;
+
+.companies {
+  @include flexCentered;
+  flex-direction: column;
+
+  .row {
+    margin: 0 0 1rem;
+  }
+
+  .col {
+    @include flexCentered;
+    padding: 0 0.5rem;
+    border-radius: 1.5rem;
+    max-width: 100%;
+    min-width: 7rem;
+    width: 10rem;
+    margin: 1rem 1rem;
+
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      transition: filter 250ms ease-in-out;
+    }
+
+    &:hover {
+      img {
+        filter: none;
+      }
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

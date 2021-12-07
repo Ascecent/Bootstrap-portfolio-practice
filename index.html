@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+    <!-- Glightbox -->
+    <link
+      rel="stylesheet"
+      href="node_modules/glightbox/dist/css/glightbox.min.css"
+    />
+
+    <title>Bootstrap practice</title>
+  </head>
+  <body>
+    <!--//////////////////////////////////////////////////////////
+                      NAVBAR SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href=".">
+            <img src="app/assets/images/logo.png" alt="Brand Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end fw-bold"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#get-started">Contact</a>
+              </li>
+            </ul>
+            <button type="button" class="btn-rounded--white">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-telephone"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </span>
+              +1 728365413
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--//////////////////////////////////////////////////////////
+                      NAVBAR SECTION END
+    //////////////////////////////////////////////////////////-->
+
+    <main>
+      <!--//////////////////////////////////////////////////////////
+                      INTRO SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section id="home" class="intro-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- INTRO CONTENT BEGIN -->
+            <div class="col-md-6 intros">
+              <div class="text-light">
+                <h1 class="display-2 display-2--heading">
+                  Hey!, Patrix here
+                </h1>
+                <p class="display-2--description lg-base">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero quidem quaerat inventore distinctio sit architecto.
+                </p>
+              </div>
+              <button type="button" class="btn-rounded--white">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </span>
+                Get in touch
+              </button>
+            </div>
+            <!-- INTRO CONTENT END -->
+
+            <!-- VIDEO CONTENT BEGIN -->
+            <div class="col-md-6 intros text-end">
+              <div class="video-box">
+                <img
+                  src="app/assets/images/introl_illustration.svg"
+                  alt="Coding"
+                  class="img-fluid w-100"
+                />
+                <a href="#" class="glightbox"
+                  ><span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="96"
+                      height="96"
+                      fill="currentColor"
+                      class="bi bi-play-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="border-animation border-animation--border-1"
+                  ></span>
+                  <span
+                    class="border-animation border-animation--border-2"
+                  ></span
+                ></a>
+              </div>
+            </div>
+            <!-- VIDEO CONTENT END -->
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f8f9fa"
+            fill-opacity="1"
+            d="M0,64L40,58.7C80,53,160,43,240,69.3C320,96,400,160,480,160C560,160,640,96,720,85.3C800,75,880,117,960,133.3C1040,149,1120,139,1200,138.7C1280,139,1360,149,1400,154.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+        INTRO SECTION END
+        //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+                          SERVICES SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="text-center position-relative">
+            <h2 class="display-3 fw-bold mt-4">Our services</h2>
+            <div class="heading-line"></div>
+          </div>
+          <div class="row pt-5 mt-0">
+            <div
+              class="col-md-6 text-center text-capitalize p-sm-5 border-right"
+            >
+              <h2 class="fw-bold">
+                our services range from initial design to deployment anywhere
+                anytime
+              </h2>
+            </div>
+            <div
+              class="
+                col-md-6
+                text-start
+                px-4
+                py-5
+                px-sm-5
+                fw-light
+                d-flex
+                align-items-center
+              "
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur culpa quisquam similique inventore consectetur ratione
+              dolores doloremque. Ea, nihil esse labore tenetur iusto, tempora
+              beatae quam asperiores molestiae, porro deserunt.
+            </div>
+          </div>
+          <!-- Services content begin -->
+          <div class="container services__container">
+            <div class="row d-flex align-items-center service">
+              <div
+                class="
+                  col-lg-6 col-md-6 col-sm-12 col-xs-12
+                  mt-4
+                  service__content
+                "
+              >
+                <!-- Marketing content begin -->
+
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="display-3--title">Marketing</h3>
+                <p class="lh-lg"
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quod inventore reprehenderit atque eaque hic quos
+                  necessitatibus voluptas omnis deserunt quia, eveniet unde.
+                  Dolorum obcaecati consectetur quibusdam eligendi quod!
+                  Adipisci, error.</p
+                >
+                <button type="button" class="btn-rounded--gradient">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span>
+                  Get in touch
+                </button>
+
+                <!-- Marketing content end -->
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 service__pic">
+                <!-- Marketing illustration -->
+                <img
+                  src="app/assets/images/services/marketing.svg"
+                  alt="Marketing illustration"
+                />
+              </div>
+            </div>
+
+            <div class="row d-flex align-items-center service">
+              <div
+                class="
+                  col-lg-6 col-md-6 col-sm-12 col-xs-12
+                  service__pic
+                  even-pic
+                "
+              >
+                <!-- Web development illustration -->
+                <img
+                  src="app/assets/images/services/dev.svg"
+                  alt="Marketing illustration"
+                />
+              </div>
+              <div
+                class="
+                  col-lg-6 col-md-6 col-sm-12 col-xs-12
+                  mt-4
+                  service__content
+                "
+              >
+                <!-- Web development content begin-->
+
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    class="bi bi-code-slash"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="display-3--title">Web development</h3>
+                <p class="lh-lg"
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quod inventore reprehenderit atque eaque hic quos
+                  necessitatibus voluptas omnis deserunt quia, eveniet unde.
+                  Dolorum obcaecati consectetur quibusdam eligendi quod!
+                  Adipisci, error.</p
+                >
+                <button type="button" class="btn-rounded--gradient">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span>
+                  Get in touch
+                </button>
+
+                <!-- Web development content end-->
+              </div>
+            </div>
+
+            <div class="row d-flex align-items-center service">
+              <div
+                class="
+                  col-lg-6 col-md-6 col-sm-12 col-xs-12
+                  mt-4
+                  service__content
+                "
+              >
+                <!-- Cloud hosting content begin -->
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    class="bi bi-cloud-upload"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="display-3--title">Cloud hosting</h3>
+                <p class="lh-lg"
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quod inventore reprehenderit atque eaque hic quos
+                  necessitatibus voluptas omnis deserunt quia, eveniet unde.
+                  Dolorum obcaecati consectetur quibusdam eligendi quod!
+                  Adipisci, error.</p
+                >
+                <button type="button" class="btn-rounded--gradient">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span>
+                  Get in touch
+                </button>
+                <!-- Cloud hosting content end -->
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 service__pic">
+                <!-- Cloud hosting illustration -->
+                <img
+                  src="app/assets/images/services/cloud.svg"
+                  alt="Marketing illustration"
+                />
+              </div>
+            </div>
+            <!-- Services content end -->
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          SERVICES SECTION END
+    //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+        COMPANIES SECTION BEGIN
+        //////////////////////////////////////////////////////////-->
+      <section id="companies" class="companies-section mt-5 py-5">
+        <div class="container">
+          <div class="row text-center position-relative mb-5">
+            <h2 class="display-3 fw-bold">Companies who trust us</h2>
+            <div class="heading-line"></div>
+
+            <div class="companies mt-5">
+              <div class="row">
+                <a
+                  href="https://www.amazon.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="col"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/amazon_logo.webp"
+                    alt="Amazon logo"
+                  />
+                </a>
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://abc.xyz/"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/alphabet_logo.webp"
+                    alt="Alphabet logo"
+                  />
+                </a>
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.avast.com/es-co/index#pc"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/avast_logo.svg"
+                    alt="Avast logo"
+                  />
+                </a>
+              </div>
+              <div class="row">
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.chase.com/espanol"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/chase-logo.webp"
+                    alt="Chase logo"
+                  />
+                </a>
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.fusioncharts.com/"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/fusioncharts_logo.svg"
+                    alt="Fusioncharts logo"
+                  />
+                </a>
+              </div>
+              <div class="row">
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.ibm.com/co-es"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/ibm_logo.svg"
+                    alt="IBM logo"
+                  />
+                </a>
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.microsoft.com/es-co"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/microsoft-logo.webp"
+                    alt="Microsoft logo"
+                  />
+                </a>
+                <a
+                  class="col"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://global.rakuten.com/corp/"
+                >
+                  <img
+                    src="app/assets/images/companies_logos/rakuten_logo.svg"
+                    alt="Rakuten logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          COMPANIES SECTION END
+    //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+                          TESTIMONIALS SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section class="testimonials" id="testimonials">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,288L34.3,266.7C68.6,245,137,203,206,154.7C274.3,107,343,53,411,69.3C480,85,549,171,617,176C685.7,181,754,107,823,112C891.4,117,960,203,1029,229.3C1097.1,256,1166,224,1234,229.3C1302.9,235,1371,277,1406,298.7L1440,320L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+          ></path>
+        </svg>
+        <div class="container">
+          <div class="row text-center text-white">
+            <h2 class="display-3 fw-bold">Testimonials</h2>
+            <hr class="mx-auto" style="width: 100px; height: 3px" />
+            <p class="pt-1 lead mb-5">What our clients are saying</p>
+          </div>
+
+          <!-- Carousel content -->
+          <div class="row align-items-center">
+            <div
+              id="carouselExampleDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div class="testimonial__card lh-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      fill="currentColor"
+                      class="bi bi-quote"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatibus eveniet minus aliquam ad facilis
+                    illo distinctio quibusdam ducimus dicta, ut, officiis magnam
+                    laborum, hic quisquam quidem vitae quas consequatur!
+                    <div class="testimonial__card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial__picture">
+                    <img
+                      src="app/assets/images/testimonials/test1.jpg"
+                      alt="Testimonial 1"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="testimonial__info">
+                    <h3>Alex Suprun</h3>
+                    <p class="fw-light">CEO & Founder</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonial__card lh-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      fill="currentColor"
+                      class="bi bi-quote"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatibus eveniet minus aliquam ad facilis
+                    illo distinctio quibusdam ducimus dicta, ut, officiis magnam
+                    laborum, hic quisquam quidem vitae quas consequatur!
+                    <div class="testimonial__card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial__picture">
+                    <img
+                      src="app/assets/images/testimonials/test2.jpg"
+                      alt="Testimonial 2"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="testimonial__info">
+                    <h3>Ben Parker</h3>
+                    <p class="fw-light">Executive Officer</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonial__card lh-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      fill="currentColor"
+                      class="bi bi-quote"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatibus eveniet minus aliquam ad facilis
+                    illo distinctio quibusdam ducimus dicta, ut, officiis magnam
+                    laborum, hic quisquam quidem vitae quas consequatur!
+                    <div class="testimonial__card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial__picture">
+                    <img
+                      src="app/assets/images/testimonials/test3.jpg"
+                      alt="Testimonial 3"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="testimonial__info">
+                    <h3>Julian Wan</h3>
+                    <p class="fw-light">Tech Lead</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonial__card lh-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      fill="currentColor"
+                      class="bi bi-quote"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatibus eveniet minus aliquam ad facilis
+                    illo distinctio quibusdam ducimus dicta, ut, officiis magnam
+                    laborum, hic quisquam quidem vitae quas consequatur!
+                    <div class="testimonial__card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial__picture">
+                    <img
+                      src="app/assets/images/testimonials/test4.jpg"
+                      alt="Testimonial 4"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="testimonial__info">
+                    <h3>Philip Washington</h3>
+                    <p class="fw-light">Sales Manager</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="testimonial__card lh-lg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="60"
+                      height="60"
+                      fill="currentColor"
+                      class="bi bi-quote"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cupiditate voluptatibus eveniet minus aliquam ad facilis
+                    illo distinctio quibusdam ducimus dicta, ut, officiis magnam
+                    laborum, hic quisquam quidem vitae quas consequatur!
+                    <div class="testimonial__card__rating">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="testimonial__picture">
+                    <img
+                      src="app/assets/images/testimonials/test5.jpg"
+                      alt="Testimonial 5"
+                      class="rounded-circle"
+                    />
+                  </div>
+                  <div class="testimonial__info">
+                    <h3>Rebecca Miers</h3>
+                    <p class="fw-light">Product Owner</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-controls mt-5">
+                <button
+                  class="btn btn-outline-light shadow-none"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-left-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="btn btn-outline-light shadow-none"
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-right-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#f8f9fa"
+            fill-opacity="1"
+            d="M0,96L34.3,133.3C68.6,171,137,245,206,240C274.3,235,343,149,411,122.7C480,96,549,128,617,144C685.7,160,754,160,823,138.7C891.4,117,960,75,1029,90.7C1097.1,107,1166,181,1234,181.3C1302.9,181,1371,107,1406,69.3L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          TESTIMONIALS SECTION END
+    //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+                          FAQ SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="text-center position-relative">
+              <h2 class="display-3 fw-bold mt-4">Frequent Questions</h2>
+              <div class="heading-line"></div>
+              <p class="lead mt-4"
+                >Frequently asked questions, get common knowledge.</p
+              >
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What are the main features?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the first item's accordion body.</strong
+                        >
+                        It is shown by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        How can i get started after trial?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the second item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Does have any discount?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow-sm mb-3">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        Can i be refundend if i'm not satisfied?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingFour"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <strong
+                          >This is the third item's accordion body.</strong
+                        >
+                        It is hidden by default, until the collapse plugin adds
+                        the appropriate classes that we use to style each
+                        element. These classes control the overall appearance,
+                        as well as the showing and hiding via CSS transitions.
+                        You can modify any of this with custom CSS or overriding
+                        our default variables. It's also worth noting that just
+                        about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does
+                        limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          FAQ SECTION END
+    //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+                          PORTFOLIO SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section class="portfolio mb-5 pb-5" id="portfolio">
+        <div class="container">
+          <div class="row mt-5 justify-content-center">
+            <div class="text-center position-relative">
+              <h2 class="display-3 fw-bold mt-5">Latest work</h2>
+              <div class="heading-line mb-4"></div>
+              <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Debitis minima numquam corrupti sapiente.
+              </p>
+            </div>
+            <!-- Filter buttons -->
+            <div class="row text-center mt-5">
+              <div class="col-md-12">
+                <button class="btn btn-outline-primary" type="button"
+                  >All</button
+                >
+                <button class="btn btn-outline-primary" type="button"
+                  >Websites</button
+                >
+                <button class="btn btn-outline-primary" type="button"
+                  >Design</button
+                >
+                <button class="btn btn-outline-primary" type="button"
+                  >Mockup</button
+                >
+              </div>
+            </div>
+
+            <!-- Portfolio content -->
+            <div class="row mt-5">
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port1.jpg"
+                    alt="Portfolio image 1"
+                    title="Image 1"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 1 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port2.jpg"
+                    alt="Portfolio image 2"
+                    title="Image 2"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 2 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port3.jpg"
+                    alt="Portfolio image 3"
+                    title="Image 3"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 3 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port4.jpg"
+                    alt="Portfolio image 4"
+                    title="Image 4"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 4 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port5.jpg"
+                    alt="Portfolio image 5"
+                    title="Image 5"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 5 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port6.jpg"
+                    alt="Portfolio image 6"
+                    title="Image 6"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 6 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port7.jpg"
+                    alt="Portfolio image 7"
+                    title="Image 7"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 7 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port8.jpg"
+                    alt="Portfolio image 8"
+                    title="Image 8"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 8 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port9.jpg"
+                    alt="Portfolio image 9"
+                    title="Image 9"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 9 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port10.png"
+                    alt="Portfolio image 10"
+                    title="Image 10"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 10 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port11.png"
+                    alt="Portfolio image 11"
+                    title="Image 11"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 11 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="portfolio-container shadow">
+                  <img
+                    src="app/assets/images/portfolio/port12.png"
+                    alt="Portfolio image 12"
+                    title="Image 12"
+                    class="img-fluid loading"
+                  />
+                  <div class="portfolio-info">
+                    <div class="caption">
+                      <h4>Project 12 name goes here</h4>
+                      <p>Category project</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          PORTFOLIO SECTION END
+    //////////////////////////////////////////////////////////-->
+
+      <!--//////////////////////////////////////////////////////////
+                          GET STARTED SECTION BEGIN
+    //////////////////////////////////////////////////////////-->
+      <section class="get-started" id="get-started">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="text-center position-relative">
+              <h2 class="display-3 fw-bold mt-5">Get started</h2>
+              <div class="heading-line mb-4"></div>
+              <p class="lh-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Debitis minima numquam corrupti sapiente.
+              </p>
+            </div>
+
+            <!-- CTA Content -->
+            <div class="row text-white mt-5">
+              <div
+                class="
+                  col-12 col-lg-6
+                  cta-info
+                  shadow
+                  d-flex
+                  flex-column
+                  justify-content-center
+                "
+              >
+                <h3 class="display-4 fw-bold">100% Satisfaction Guaranteed</h3>
+                <p class="lh-lg"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dignissimos nulla rem vel nemo id maiores fugit in illum
+                  obcaecati sed eveniet ipsa aliquid doloribus soluta
+                  repudiandae, temporibus nobis incidunt optio.</p
+                >
+                <h4 class="display-3--brief">What will be the next step?</h4>
+                <ul class="cta-info__list">
+                  <li>We'll prepare the proposal.</li>
+                  <li>We'll discuss it together.</li>
+                  <li>Let's start discussion.</li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-6 cta-form bg-white shadow">
+                <h4 class="display-3--title mb-5 fs-1">Start your project</h4>
+                <form action="#" class="row">
+                  <div class="mb-3 col-lg-6 col-md-6"
+                    ><input
+                      type="text"
+                      placeholder="First name"
+                      id="input-first-name"
+                      class="form-control shadow-sm"
+                  /></div>
+                  <div class="mb-3 col-lg-6 col-md-6">
+                    <input
+                      type="text"
+                      placeholder="Last name"
+                      id="input-last-name"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="mb-3 col-lg-12">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      id="input-email"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="mb-3 col-lg-12">
+                    <textarea
+                      name="messasge"
+                      id="message"
+                      cols="30"
+                      rows="8"
+                      class="form-control shadow-sm"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button class="btn-rounded--gradient mt-5 p-3 fw-bold"
+                    >Boost your business</button
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//////////////////////////////////////////////////////////
+                          GET STARTED SECTION END
+    //////////////////////////////////////////////////////////-->
+    </main>
+
+    <!--//////////////////////////////////////////////////////////
+                          FOOTER BEGIN
+    //////////////////////////////////////////////////////////-->
+    <footer class="footer text-white">
+      <div class="footer-sm" style="background-color: #212121">
+        <div class="container">
+          <div class="row justify-content-between align-items-center py-4">
+            <div class="col-lg-5 col-sm-5 text-center text-sm-start"
+              >Connect us on social media
+            </div>
+            <div
+              class="
+                col
+                d-flex
+                justify-content-sm-end justify-content-center
+                flex-row
+                mt-3 mt-sm-0
+              "
+            >
+              <a href="#" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  />
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
+              <a class="social-link" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row mt-5 pb-3">
+          <div class="col-12 col-sm-6 col-lg-6">
+            <h5 class="fw-bold">Company name</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 4rem; height: 2px"
+            />
+            <p class="lh-lg"
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+              harum, expedita voluptas veniam rem quae incidunt, optio
+              recusandae aperiam voluptate iure quis? Harum veritatis libero
+              mollitia perferendis vel. Placeat, nemo!</p
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 text-center text-sm-end">
+            <h5 class="fw-bold">Products</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 4rem; height: 2px"
+            />
+            <ul class="list-inline link-list">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+              <li><a href="#">Product 4</a></li>
+            </ul>
+          </div>
+          <div
+            class="
+              col-12 col-sm-6 col-lg-2
+              mb-4
+              text-center text-sm-start text-md-end
+            "
+          >
+            <h5 class="fw-bold">Useful links</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 4rem; height: 2px"
+            />
+            <ul class="list-inline link-list">
+              <li><a href="#">Useful link 1</a></li>
+              <li><a href="#">Useful link 2</a></li>
+              <li><a href="#">Useful link 3</a></li>
+              <li><a href="#">Useful link 4</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 text-center text-sm-end">
+            <h5 class="fw-bold">Contacts</h5>
+            <hr
+              class="bg-white d-inline-block mb-4"
+              style="width: 4rem; height: 2px"
+            />
+            <ul class="list-inline link-list">
+              <li><a href="#">Contact 1</a></li>
+              <li><a href="#">Contact 2</a></li>
+              <li><a href="#">Contact 3</a></li>
+              <li><a href="#">Contact 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom py-5">
+        <div class="container">
+          <div class="row text-center mx-2">
+            <p class="m-0">
+              &COPY; Copyright 2021 <a href="#">Multi purpose company</a> |
+              Created with &hearts; by
+              <a
+                href="https://github.com/Ascecent"
+                target="_blank"
+                rel="noopener"
+                >Ivan Holguin</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--//////////////////////////////////////////////////////////
+                          FOOTER END
+    //////////////////////////////////////////////////////////-->
+
+    <!-- Back to top buttom -->
+    <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="currentColor"
+        class="bi bi-arrow-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
+        />
+      </svg>
+    </a>
+
+    <!-- Bootstrap bundle -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Glightbox -->
+    <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+      const lightbox = GLightbox({
+        href: "https://www.youtube.com/watch?v=qdU7RgF8exI&ab_channel=LofiGirl",
+        type: "video",
+        source: "youtube",
+        width: 900,
+        autoplayVideos: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@use "../custom-bootstrap" as *;
+
+// Gradient background
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 1),
+    rgba($secondary, 1)
+  );
+}
+
+// Background and color transition
+@mixin backgroundAndColorTransition {
+  transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+// Absolute center position
+@mixin absoluteCenterPosition {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteHorizontalPosition {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absoluteVerticalPosition {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
